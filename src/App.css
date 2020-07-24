@@ -1,0 +1,62 @@
+body{
+  margin: 30px;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-color: #fccbcb;
+}
+.main-title{
+  text-align: center;
+  color: darkgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input{
+  width: 30%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button{
+  background: lightslategray;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.recipes{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .recipes{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.ingredients{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+  border-radius: 1vh;
+}
+
+.recipe-title span{
+  font-size: 3vh;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #ad9d9d;
+  color: white;
+  border-radius: 2vh;
+}
